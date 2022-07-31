@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, :after, :before{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary: #C5C1B6;
+}
+
+body{
+    background: var(--primary);
+    text-transform: uppercase;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 10px 0 20px 0;
+    font-weight: 100;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+main{
+    padding: 1.5rem 2.5rem 3rem;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: min-content 1fr;
+	grid-row-gap: 8vh;
+}
+
+#container {
+    max-width: none;
+    grid-column-gap: 5vw;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+}
+
+.container__div {
+    grid-template-rows: 1rem auto auto 1fr auto;
+    grid-template-columns: 100%;
+    margin-bottom: 5rem;
+    display: grid;
+    }
+
+#img1{
+    background-image: url("../images/fashion-gb2db4325c_640.jpg");
+    transform: translate(0px, 0px);
+}
+
+#img2{
+    background-image: url("../images/girl-gbbbf1c1a1_640.jpg");
+    transform: translate(0px, 0px);
+}
+#img3{
+    background-image: url("../images/woman-g2cf865cb5_640.jpg");
+    transform: translate(0px, 0px);
+}
+
+.img{
+    width: 100%;
+    aspect-ratio: 500/333;
+    position: relative;
+    overflow: hidden;
+}
+
+.item__img{
+    width: 100%;
+    height: 100%;
+    background-position: 50% 45%;
+    background-size: cover;
+}
+
+
+.btn{
+    padding: 15px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-top: 150px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+
+
+@media screen and (max-width: 950px){
+    body{
+        height: 100vh;
+        overflow: visible;
+    }
+
+    #container{
+        display: block;
+    }
+
+    .btn{
+        margin-top: 50px;
+    }
+}
