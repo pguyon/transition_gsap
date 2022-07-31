@@ -197,16 +197,14 @@ header{
   }
   
 
-  @media screen and (max-width: 970px) {
+  @media only screen and (min-width: 671px) and (max-width: 970px) {
     header{
-        padding-top: 0;
+        padding-top: 30px;
     }
   }
 
-  @media screen and (max-width: 450px) {
-    header{
-        padding-top: 15px;
-    }
+  @media screen and (max-width: 670px) {
+
     .sign{
         font-size: 2rem;
     }
